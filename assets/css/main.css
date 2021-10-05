@@ -167,6 +167,11 @@ input, select, textarea {
 			color: #353535 !important;
 		}
 
+		a.disabled {
+			pointer-events: none;
+			cursor: default;
+		  }
+		  
 	strong, b {
 		color: #ffffff;
 		font-weight: 600;
@@ -178,6 +183,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-size: .8em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1780,6 +1786,14 @@ input, select, textarea {
 		header.major > :first-child {
 			margin-bottom: 0;
 			width: calc(100% + 0.5em);
+			text-transform: uppercase;
+			color: #d1d1d1;
+			/* font-size: 4em !important; */
+			margin: 0;
+			font-family: Helvetica;
+			font-weight: 900;
+			font-style: italic;
+			letter-spacing: -0.1em;
 		}
 
 			header.major > :first-child:after {
@@ -2203,6 +2217,12 @@ input, select, textarea {
 			display: block;
 			margin: 2.5em 0;
 			width: 100%;
+		}
+
+		.image.second {
+			display: block;
+			margin: 2.5em auto;
+			width: 60%;
 		}
 
 			.image.main img {
@@ -3625,8 +3645,8 @@ input, select, textarea {
 			#main > * > .inner {
 				padding: 4em 0 2em 0 ;
 				margin: 0 auto;
-				max-width: 65em;
-				width: calc(100% - 6em);
+				max-width: 55em;
+				width: calc(100% - 25em);
 			}
 
 				@media screen and (max-width: 736px) {
